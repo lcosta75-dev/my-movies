@@ -1,7 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
-export const MovieItem = ({ title }) => (
+export const MovieItem = ({ title, id }) => (
   <li>
-    {title}
+    <Link to={`movie/${id}`}>{title}</Link>
   </li>
 );
