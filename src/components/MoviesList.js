@@ -1,9 +1,8 @@
+import React from 'react'
 import { MovieItem } from "./MovieItem";
 
 export const MoviesList = ({ movies }) => (
-  <section>
-    <ul>
-      {movies.map(m => <MovieItem title={m.title} /> )}
-    </ul>
-  </section>
+  <ul>
+    {movies.map(m => <MovieItem title={m.title} /> )}
+  </ul>
 );
